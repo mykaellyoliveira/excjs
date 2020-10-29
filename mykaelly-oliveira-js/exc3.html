@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercício 3</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<script>
+	var salario = prompt("Digite seu salário:");
+
+	salario = salario.replace(",",".");
+
+	var aumento;
+
+	 if (salario <= 1045.00)
+	{
+		salarioat = parseFloat(salario) + parseFloat(salario) * 0.30;   
+	}
+	else if (salario >= 1045.01 && salario <= 1500.00)
+	{
+		salarioat = parseFloat(salario) + parseFloat(salario) * 0.25;
+	}
+	else if (salario >= 1500.01 && salario <= 2600.00)
+	{
+		salarioat = parseFloat(salario) + parseFloat(salario) * 0.20;
+	}
+	else if (salario >= 2600.01 && salario <= 3550.00)
+	{
+		salarioat = parseFloat(salario) + parseFloat(salario) * 0.15;
+	}
+	else if (salario >= 3550.00)
+	{
+		salarioat = parseFloat(salario) + parseFloat(salario) * 0.10;
+	}
+
+	salarioat = (parseFloat(salarioat)).toFixed(2);
+	alert ("Seu salário com aumento é de: " + salarioat);  
+</script>
+
+</body>
+</html>

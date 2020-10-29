@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Exercício 1</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<script>
+	const MEDIA = 70;
+	const AULAS = 80;
+	const PORCLIMFALTAS = 0.25;
+
+	var nome = prompt("Digite o nome do aluno:");
+	var nota1 = prompt("Digite a primeira nota:");
+	var nota2 = prompt("Digite a segunda nota:");
+	var nota3 = prompt("Digite a terceira nota:");
+	var faltas = prompt("Digite o número de faltas do aluno:");
+
+	var notafinal = (parseInt(nota1) + parseInt(nota2) + parseInt(nota3)) / 3;
+
+	alert(parseInt(notafinal));
+
+	const LIMITEFALTAS = AULAS * PORCLIMFALTAS;
+
+	if (notafinal >= MEDIA && faltas <= LIMITEFALTAS)
+	{
+		alert("Aluno(a) " + nome + " aprovado(a)");
+	}
+	else if (notafinal < MEDIA && faltas > LIMITEFALTAS)
+	{
+		alert("Aluno(a) " + nome + " reprovado(a) por média e por faltas");
+	}
+	else if (faltas > LIMITEFALTAS)
+	{
+		alert("Aluno(a) " + nome + " reprovado(a) por faltas");
+	}
+	else if (notafinal < MEDIA)
+	{
+		alert("Aluno(a) " + nome + " reprovado(a) por média");
+	}
+</script>
+</body>
+</html>

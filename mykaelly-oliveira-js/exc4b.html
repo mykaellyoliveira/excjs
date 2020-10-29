@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercício 4b)</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script>
+		var arrayb = [0,1,4,9,16,25,36,49,64,81,100];
+		var auxiliar;
+		var x;
+		var y;
+
+		for(x = 0; x < 11; x++){
+			for (y = 0; y < 11; y++)
+			{
+				if(arrayb[x] > arrayb[y])
+				{
+					auxiliar = arrayb[x];
+					arrayb[x] = arrayb[y];
+					arrayb[y] = auxiliar;
+				}
+			}
+		}
+
+		alert("Ordem decrescente: " + arrayb);
+	</script>
+</body>
+</html>

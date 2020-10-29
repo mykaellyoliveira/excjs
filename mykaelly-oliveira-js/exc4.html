@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercício 4</title>
+</head>
+<body>
+<script>
+	var arraya = [10, 9, 8, 7, 6 , 5, 4, 3, 2,1];
+	var auxiliar;
+	var x;
+	var y;
+
+	for(x = 0; x < 10; x++)
+	{
+		for(y = 0; y < 10; y++)
+		{
+			if(arraya[x] < arraya[y])
+			{
+				auxiliar = arraya[x];
+				arraya[x] = arraya[y];
+				arraya[y] = auxiliar;
+			}
+		}
+	}
+
+	alert ("Ordem crescente:" + arraya);
+
+
+</script>
+</body>
+</html>

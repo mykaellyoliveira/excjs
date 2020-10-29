@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Exercício 2</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<script>
+	var lucroprod;
+	var valorvend;
+	var valorprod = prompt("Digite o valor do produto");
+	const LUCRO1 = 0.45;
+	const LUCRO2 = 0.30;
+	const condicao = 50;
+
+	var valorprod1 = valorprod.replace(",",".");
+	
+	if (valorprod1 < condicao) {
+		valorvend = (parseFloat(valorprod1) + valorprod1 * LUCRO1).toFixed(2);
+	}
+	else 
+	{
+		valorvend = (parseFloat(valorprod1) + valorprod1 * LUCRO2).toFixed(2);
+	}
+
+	alert("O valor de venda do produto será: " + valorvend )
+
+</script>
+</body>
+</html>

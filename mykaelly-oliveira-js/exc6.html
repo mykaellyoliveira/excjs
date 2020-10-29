@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Exercício 6</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<script>
+	var x;
+	var dado1;
+	var dado2;
+	var somadados;
+	var pares = 0;
+	var impares = 0;
+
+	for (x = 1; x <= 10; x++)
+	{
+		dado1 =  Math.floor(Math.random() * 6 + 1);
+		dado2 =  Math.floor(Math.random() * 6 + 1);
+		somadados = dado1 + dado2;
+
+		if (somadados % 2 == 0)
+		{
+			pares++
+			alert ("Dado 1: " + dado1 + "\nDado 2: " + dado2 + "\nSoma dos dados: " + somadados + "\nA soma dos dados da jogada " + x + " é par");
+		}
+		else 
+		{
+			impares++
+			alert ("Dado 1: " + dado1 + "\nDado 2: " + dado2 + "\nSoma dos dados: " + somadados + "\nA soma dos dados da jogada " + x + " é ímpar");
+		}
+	}
+
+	alert ("Jogadas com números pares: " + pares + "\nJogadas com números ímpares: " + impares)
+</script>
+</body>
+</html>
