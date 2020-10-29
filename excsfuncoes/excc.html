@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Exercicío3</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script>
+		var nome = prompt("Digite seu nome:");
+		var qualidade = prompt("Digite uma qualidade sua:");
+
+		 function chapeuSeletor(qualid)
+		{
+			let casa;
+
+			if (qualid == "corajoso" || qualid  == "leal")
+			{
+				casa = "Griffinória";
+			}
+			else if (qualid == "ambicioso" || qualid == "calculista" || qualid == "orgulhoso")
+			{
+				casa = "Sonserina";
+			}
+			else if (qualid == "capacidade intelectual" || qualid == "focado nos estudos")
+			{
+				casa = "Corvinal";
+			}
+			else if (qualid == "gentil" || qualid == "paciente" || qualid == "tolerante")
+			{
+				casa = "Lufa-Lufa"
+			}
+			return casa;
+		}
+
+		 alert(nome + " sua casa é " + chapeuSeletor(qualidade));
+	</script>
+</body>
+</html>

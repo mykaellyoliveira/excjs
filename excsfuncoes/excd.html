@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Exercício d</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+<script>
+	var saqueDeposito = prompt("Digite sacar para saques ou depositar para depósito")
+	var valor = prompt("Qual o valor?")
+
+	function banco (sd, value)
+	{
+		let total = 1000;
+
+		switch(sd)
+		{
+			case 'sacar':
+			total = total - value;
+			break;
+			case 'depositar':
+			total = total + value;
+			break;
+		}
+		return total;
+	}
+
+	alert ("Seu saldo atual é de " + banco(saqueDeposito,parseInt(valor)))
+</script>
+</body>
+</html>
