@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1> Media <h1>
+	<p> Digite a média </p>
+	<input type="numer" id="number"/>
+	<button onclick="media"></button>
+
+
+</body>
+<script>
+	function media()
+	{
+		const MEDIA = 60;
+
+		var number = document.getElementById("number").value;
+		console.log(number);
+
+		if( number >= MEDIA){
+			document.getElementById("resultado").innerHTML = "Aprovado";
+		}
+		else
+		{
+			document.getElementById("resultado").innerHTML = "Reprovado"
+		}
+	}
+</script>
+</html>
